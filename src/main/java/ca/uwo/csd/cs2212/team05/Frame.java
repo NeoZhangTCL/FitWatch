@@ -1,12 +1,14 @@
 package ca.uwo.csd.cs2212.team05;
 
-import java.awt.Dimension;
 import java.awt.EventQueue;
-import java.awt.Toolkit;
 
 import javax.swing.JFrame;
 
-public class Frame {
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Toolkit;
+
+public class Frame extends JFrame{
 
 	private String currentPanelName;
 	private JFrame mainFrame;
@@ -19,6 +21,7 @@ public class Frame {
 		this.currentPanelName = "";
 		this.loginPanel = new LoginPanel(this);
 		this.mainPanel = new MainPanel(this);
+		//mainFrame.setUndecorated(true);
 		initialize();
 	}
 
@@ -31,11 +34,14 @@ public class Frame {
 		centreWindow(this.mainFrame);
 		mainFrame.setResizable(false);
 		mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		mainFrame.setUndecorated(true);
 		
 		this.currentPanelName = "LoginPanel";
 		frameSwitch();
 		this.setCurrentPanel(loginPanel.getPanelForward());
 		frameSwitch();
+		//mainFrame.setIconImage(image);
+		
 	}
 	
 	public static void centreWindow(JFrame frame) {
@@ -59,9 +65,7 @@ public class Frame {
 				this.loginPanel.setVisible(false);
 			}break;
 		}
-		
 	}
-	
 	
 	public String getCurrentPanel() {
 		return currentPanelName;
@@ -72,7 +76,7 @@ public class Frame {
 	}
 	
 	
-	////////////////////����а��ķָ��ߣ�P������ϱ�///////////////////////////////////////////////
+	////////////////////啊啊啊啊我不要进逼淋淋快点保佑我靴靴！我一定会买130张幺蛾子的/////////////////////////////////
 	/**
 	 * Launch the application.
 	 */

@@ -4,13 +4,13 @@ import java.awt.Color;
 
 import javax.swing.JPanel;
 
-public class ContentPanel extends JPanel {
+public class AchievementPanel extends JPanel {
 
 	/**
 	 * Create the panel.
 	 */
-	public ContentPanel() {
-		setBackground(Color.GRAY);
+	public AchievementPanel() {
+		setBackground(Color.DARK_GRAY);
 		setLayout(null);
 		initialize();
 	}
