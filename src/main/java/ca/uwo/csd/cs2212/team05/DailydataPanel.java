@@ -1,31 +1,32 @@
 package ca.uwo.csd.cs2212.team05;
 
 import java.awt.Color;
+import java.util.Calendar;
 
-import javax.swing.JPanel;
 import javax.swing.JLabel;
+import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 
 
-public class DailydataPanel extends JPanel {
-	/**
-	 * 
-	 */
-	
+public class DailyDataPanel extends JPanel {
+
+	private String simpleDate;
+	private JPanel parent;
 	/**
 	 * Create the panel.
 	 */
-	public DailydataPanel() {
+	public DailyDataPanel(JPanel parent) {
+		this.parent = parent;
+		
+		this.setSize(610, 452);
+		this.setLayout(null);
 		setBackground(Color.PINK);
 		setLayout(null);
 		initialize();
-		
-		
 	}
 	
 	public void initialize(){
-		this.setSize(610, 452);
-		this.setLayout(null);
+		this.removeAll();
 		
 		//steps label
 		JLabel stepsLabel = new JLabel("Steps");
